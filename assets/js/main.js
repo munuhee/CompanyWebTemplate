@@ -1,9 +1,7 @@
 /**
-* Template Name: Impact
-* Updated: Sep 18 2023 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/impact-bootstrap-business-website-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
+* Template Name: StEvolve
+* Updated: Nov12 2023
+* Author: StEvolve
 */
 document.addEventListener('DOMContentLoaded', () => {
   "use strict";
@@ -17,6 +15,22 @@ document.addEventListener('DOMContentLoaded', () => {
       preloader.remove();
     });
   }
+
+  /**
+   * Cursor animations 
+   */
+  document.body.addEventListener("mousemove", function (event) {
+    var t = document.getElementById("cursor");
+    var e = document.getElementById("cursor2");
+    var i = document.getElementById("cursor3");
+
+    t.style.left = event.clientX + "px";
+    t.style.top = event.clientY + "px";
+    e.style.left = event.clientX + "px";
+    e.style.top = event.clientY + "px";
+    i.style.left = event.clientX + "px";
+    i.style.top = event.clientY + "px";
+  });
 
   /**
    * Sticky Header on Scroll
@@ -39,8 +53,9 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('scroll', headerFixed);
   }
 
-  /*-------------nav scrol -----------
---------------------------------*/
+  /**
+   * Navbar appearance on scroll
+   */
   window.addEventListener("scroll", function () {
     const navbar = document.getElementById("header");
 
@@ -133,6 +148,21 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     })
   });
+
+  /**
+   * Back to top button
+   */
+  const backToTop = document.querySelector('.back-to-top');
+
+  if (backToTop) {
+    const toggleBackToTop = () => {
+      backToTop.classList.toggle('active', window.scrollY > 100);
+    };
+
+    window.addEventListener('load', toggleBackToTop);
+    window.addEventListener('scroll', toggleBackToTop);
+  }
+
 
   /**
    * Initiate glightbox
@@ -253,43 +283,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /**
-   * Porfolio isotope and filter
-   */
-  let portfolionIsotope = document.querySelector('.portfolio-isotope');
-
-  if (portfolionIsotope) {
-
-    let portfolioFilter = portfolionIsotope.getAttribute('data-portfolio-filter') ? portfolionIsotope.getAttribute('data-portfolio-filter') : '*';
-    let portfolioLayout = portfolionIsotope.getAttribute('data-portfolio-layout') ? portfolionIsotope.getAttribute('data-portfolio-layout') : 'masonry';
-    let portfolioSort = portfolionIsotope.getAttribute('data-portfolio-sort') ? portfolionIsotope.getAttribute('data-portfolio-sort') : 'original-order';
-
-    window.addEventListener('load', () => {
-      let portfolioIsotope = new Isotope(document.querySelector('.portfolio-container'), {
-        itemSelector: '.portfolio-item',
-        layoutMode: portfolioLayout,
-        filter: portfolioFilter,
-        sortBy: portfolioSort
-      });
-
-      let menuFilters = document.querySelectorAll('.portfolio-isotope .portfolio-flters li');
-      menuFilters.forEach(function (el) {
-        el.addEventListener('click', function () {
-          document.querySelector('.portfolio-isotope .portfolio-flters .filter-active').classList.remove('filter-active');
-          this.classList.add('filter-active');
-          portfolioIsotope.arrange({
-            filter: this.getAttribute('data-filter')
-          });
-          if (typeof aos_init === 'function') {
-            aos_init();
-          }
-        }, false);
-      });
-
-    });
-
-  }
-
-  /**
    * Animation on scroll function and init
    */
   function aos_init() {
@@ -303,71 +296,131 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     aos_init();
   });
-});
 
-/*-----------------
-----  CUrsor-------
-------------------*/
-(function ($) {
-  "use strict";
-
-  // Page cursors
-  document.getElementsByTagName("body")[0].addEventListener("mousemove", function (n) {
-    t.style.left = n.clientX + "px";
-    t.style.top = n.clientY + "px";
-    e.style.left = n.clientX + "px";
-    e.style.top = n.clientY + "px";
-    i.style.left = n.clientX + "px";
-    i.style.top = n.clientY + "px";
+  /**
+   * Initialize a Swiper carousel with coverflow effect, 
+   * keyboard navigation, loop, and responsive breakpoints.
+   */
+  var swiper = new Swiper(".gallery-swiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 100,
+      modifier: 3,
+      slideShadows: true
+    },
+    keyboard: true,
+    mousewheel: {
+      thresholdDelta: 70
+    },
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2
+      },
+      768: {
+        slidesPerView: 1
+      },
+      1024: {
+        slidesPerView: 2
+      },
+      1560: {
+        slidesPerView: 3
+      }
+    }
   });
 
-  var t = document.getElementById("cursor"),
-    e = document.getElementById("cursor2"),
-    i = document.getElementById("cursor3");
-})(jQuery);
+  /**
+   * Whatsapp chat
+   */
+  // Whatsapp Chat Widget by www.bloggermix.com
 
-/*---------------------
-----Gallery-----------
-----------------------*/
-/*
-inspiration
-https://dribbble.com/shots/4684682-Aquatic-Animals
-*/
-
-var swiper = new Swiper(".gallery-swiper", {
-  effect: "coverflow",
-  grabCursor: true,
-  centeredSlides: true,
-  coverflowEffect: {
-    rotate: 0,
-    stretch: 0,
-    depth: 100,
-    modifier: 3,
-    slideShadows: true
-  },
-  keyboard: {
-    enabled: true
-  },
-  mousewheel: {
-    thresholdDelta: 70
-  },
-  loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true
-  },
-  breakpoints: {
-    640: {
-      slidesPerView: 2
-    },
-    768: {
-      slidesPerView: 1
-    },
-    1024: {
-      slidesPerView: 2
-    },
-    1560: {
-      slidesPerView: 3
+document.addEventListener("click", function(event) {
+  if (event.target.id === "send-it") {
+    var chatInput = document.getElementById("chat-input");
+    if (chatInput.value !== "") {
+      var phoneNumber = document.getElementById("get-number").textContent;
+      var message = document.getElementById("chat-input").value;
+      var whatsappWebURL = "https://web.whatsapp.com/send";
+      var phone = phoneNumber;
+      var text = "&text=" + message;
+      if (
+        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+          navigator.userAgent
+        )
+      ) {
+        whatsappWebURL = "whatsapp://send";
+      }
+      var whatsappURL = whatsappWebURL + "?phone=" + phone + text;
+      window.open(whatsappURL, "_blank");
     }
   }
+});
+
+document.addEventListener("click", function(event) {
+  if (event.target.classList.contains("informasi")) {
+    document.getElementById("get-number").textContent = event.target.querySelector(".my-number").textContent;
+    document.querySelectorAll(".start-chat, .get-new").forEach(function (element) {
+      element.classList.add("show");
+      element.classList.remove("hide");
+    });
+    document.querySelectorAll(".home-chat, .head-home").forEach(function (element) {
+      element.classList.add("hide");
+      element.classList.remove("show");
+    });
+    document.getElementById("get-nama").textContent = event.target.querySelector(".info-chat .chat-nama").textContent;
+    document.getElementById("get-label").textContent = event.target.querySelector(".info-chat .chat-label").textContent;
+  }
+});
+
+document.addEventListener("click", function(event) {
+  if (event.target.classList.contains("close-chat")) {
+    document.getElementById("whatsapp-chat").classList.add("hide");
+    document.getElementById("whatsapp-chat").classList.remove("show");
+  }
+});
+
+document.addEventListener("click", function(event) {
+  if (event.target.classList.contains("chat-toggler")) {
+    if (document.getElementById("whatsapp-chat").classList.contains("show")) {
+      document.getElementById("whatsapp-chat").classList.add("hide");
+      document.getElementById("whatsapp-chat").classList.remove("show");
+    } else {
+      document.getElementById("whatsapp-chat").classList.add("show");
+      document.getElementById("whatsapp-chat").classList.remove("hide");
+    }
+  }
+});
+
+  /**
+   * Get current time
+   */
+  function getCurrentTime() {
+    const now = new Date();
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+    const ampm = hours >= 12 ? 'pm' : 'am';
+
+    if (hours > 12) {
+        hours -= 12;
+    }
+
+    hours = hours < 10 ? '0' + hours : hours;
+    minutes = minutes < 10 ? '0' + minutes : minutes;
+
+    const currentTime = hours + ':' + minutes + ' ' + ampm;
+
+    document.getElementById('current-time').textContent = currentTime;
+  }
+
+  getCurrentTime();
+  setInterval(getCurrentTime, 60000);
+
 });

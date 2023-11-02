@@ -8,6 +8,7 @@
     <link href="assets/img/favicon.png" rel="icon">
 
     <title>Responsive Navbar</title>
+
     <link rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet"
@@ -19,6 +20,7 @@
 
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
+
   <body>
     <!-- Header -->
     <header id="header" class="header d-flex align-items-center">
@@ -32,8 +34,8 @@
           <ul>
             <li><a href="#hero">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav><!-- .navbar -->
@@ -42,469 +44,497 @@
       </div>
     </header>
     <!-- End Header -->
-      <section class="hero">
-        <div class="container mt-5">
-          <div class="row">
-            <div
-              class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
-              data-aos="fade-up" data-aos-delay="200">
-              <div class="hero-title">
-                <span>Let's Create</span><br />
-                <span style="color: #ff5e14;">Your Marketing Magic</span>
-              </div>
-              <div class="mt-3">
-                <p>
-                  We specialize in creating captivating marketing strategies
-                  and advertising campaigns to help your business grow and
-                  succeed.
-                </p>
-                <div
-                  class="d-flex justify-content-center justify-content-lg-start">
-                  <button class="button-hero" role="button">Learn More</button>
-                  <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q"
-                    class="glightbox btn-watch-video"><i
-                      class="bi bi-play-circle"></i><span>Watch Video</span></a>
-                </div>
+    <section id="hero" class="hero">
+      <div class="container mt-5">
+        <div class="row">
+          <div
+            class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
+            data-aos="fade-up" data-aos-delay="200">
+            <div>
+              <h1>Let's Create</span><br />
+              <h1 style="color: #ff5e14;">Your Marketing Magic</h1>
+            </div>
+            <div class="mt-3">
+              <h2>
+                We specialize in creating captivating marketing strategies
+                and advertising campaigns to help your business grow and
+                succeed.
+              </h2>
+              <div
+                class="d-flex justify-content-center justify-content-lg-start">
+                <button class="button-hero" role="button">Learn More</button>
+                <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q"
+                  class="glightbox btn-watch-video"><i
+                    class="bi bi-play-circle"></i><span>Watch Video</span></a>
               </div>
             </div>
-            <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in"
-              data-aos-delay="200">
-              <img src="assets/img/hero.png" />
-            </div>
           </div>
+          <div class="col-lg-6 order-1 order-lg-2 hero-img mt-5" data-aos="zoom-in"
+            data-aos-delay="200">
+            <img src="assets/img/hero.png" class="img-fluid" />
+          </div>
+      </div>
+      <div class="chat-img" data-aos="flip-up" data-aos-delay="300">
+        <img src="assets/img/chat.png" width="150"/>
+      </div>
+      <div class="balance-img" data-aos="flip-up" data-aos-delay="300">
+        <img src="assets/img/balance.png" width="150"/>
+      </div>
+      <div class="hero-img-bg" data-aos="flip-up" data-aos-delay="300">
+        <img src="assets/img/hero_img_bg.png" width="530"/>
+      </div>
+      </div>
+      <div class="banner-links mt-3">
+        <a href="#" title><i class="bi bi-linkedin"></i></a>
+        <a href="#" title><i class="bi bi-youtube"></i></a>
+        <a href="#" title><i class="bi bi-facebook"></i></a>
+        <a href="#" title><i class="bi bi-instagram"></i></a>
+        <a href="#" title><i class="bi bi-whatsapp"></i></a>
+        <span>Follow us -</span>
+      </div>
+    </section>
+    
+    <section class="section-boxes-container">
+      <div class="row section-boxes ml-4 mr-4 rounded-4" data-aos="zoom-in-down">
+        <div class="col-lg-4 col-md-4 col-12 text-center">
+          <i class="bi bi-globe" style="color: #c7920b;"></i><br>
+          <strong>High Impact Marketing</strong>
+          <p class="mt-2">
+            We deliver high-quality marketing solutions that make
+            a significant impact on your business.
+          </p>
         </div>
-        <div class="banner-links mt-3">
-          <a href="#" title><i class="bi bi-linkedin"></i></a>
-          <a href="#" title><i class="bi bi-youtube"></i></a>
-          <a href="#" title><i class="bi bi-facebook"></i></a>
-          <a href="#" title><i class="bi bi-instagram"></i></a>
-          <a href="#" title><i class="bi bi-whatsapp"></i></a>
-          <span>Follow us -</span>
+        <div class="col-lg-4 col-md-4 col-12 text-center">
+          <i class="bi bi-gift-fill" style="color: #179494;"></i><br>
+          <strong>Creative Advertising</strong>
+          <p class="mt-2">
+            Our creative advertising campaigns are designed to captivate
+            your audience and drive results.
+          </p>
         </div>
-      </section>
-
-      <section class="section-boxes-container">
-        <div class="row section-boxes ml-4 mr-4 rounded-4" data-aos="zoom-in-down">
-          <div class="col-lg-4 col-md-4 col-12 text-center">
-            <i class="bi bi-globe" style="color: #c7920b;"></i><br>
-            <span class="text-bold">High Impact Marketing</span>
-            <p class="mt-2">
-              We deliver high-quality marketing solutions that make
-              a significant impact on your business.
-            </p>
-          </div>
-          <div class="col-lg-4 col-md-4 col-12 text-center">
-            <i class="bi bi-gift-fill" style="color: #179494;"></i><br>
-            <span class="text-bold">Creative Advertising</span>
-            <p class="mt-2">
-              Our creative advertising campaigns are designed to captivate
-              your audience and drive results.
-            </p>
-          </div>
-          <div class="col-lg-4 col-md-4 col-12 text-center">
-            <i class="bi bi-lock" style="color: #0bc759;"></i><br>
-            <span class="text-bold">Secure Marketing Strategies</span>
-            <p class="mt-2">
-              Your marketing is safe with us. We provide secure and
-              reliable marketing strategies.
-            </p>
-          </div>
+        <div class="col-lg-4 col-md-4 col-12 text-center">
+          <i class="bi bi-lock" style="color: #0bc759;"></i><br>
+          <strong>Secure Marketing Strategies</strong>
+          <p class="mt-2">
+            Your marketing is safe with us. We provide secure and
+            reliable marketing strategies.
+          </p>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- ======= About Us Section ======= -->
-      <section id="about" class="about">
-        <div class="container" data-aos="fade-up">
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
 
-          <div class="section-header">
-            <h2>About Us</h2>
-            <span class="line"></span>
-            <p>
-              We are a dedicated team of marketing and advertising experts,
-              committed to helping businesses succeed through effective
-              marketing
-              strategies and creative campaigns.
+        <div class="section-header pb-5">
+          <h2>About Us</h2>
+          <span class="line"></span>
+          <p>
+            A dedicated team of marketing
+            experts driving business success through creative campaigns and
+            effective strategies.
+          </p>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-6">
+            <h3>Your Marketing Partner</h3>
+            <img src="assets/img/Infinty-Loop-Desktop.gif"
+              class="img-fluid rounded-4 mb-4"
+              alt>
+            <p>At our marketing company, we are passionate about providing
+              top-notch
+              marketing services. Our team works closely with clients to
+              develop marketing
+              strategies that deliver results.
+            </p>
+            <p>Our experienced marketing professionals are dedicated to
+              helping your business
+              thrive. We focus on delivering impactful marketing solutions
+              tailored to your
+              unique needs.
             </p>
           </div>
-
-          <div class="row gy-4">
-            <div class="col-lg-6">
-              <h3>Your Marketing Partner</h3>
-              <img src="assets/img/about.jpg" class="img-fluid rounded-4 mb-4"
-                alt>
-              <p>At our marketing company, we are passionate about providing
-                top-notch
-                marketing services. Our team works closely with clients to
-                develop marketing
-                strategies that deliver results.
+          <div class="col-lg-6">
+            <div class="content ps-0 ps-lg-5">
+              <p class="fst-italic">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                seddoeiusmod tempor incididunt ut labore et dolore magna
+                aliqua.
               </p>
-              <p>Our experienced marketing professionals are dedicated to
-                helping your business
-                thrive. We focus on delivering impactful marketing solutions
-                tailored to your
-                unique needs.
+              <ul>
+                <li><i class="bi bi-check-circle-fill" style="color: #ff5e14;"></i>
+                  Customized
+                  Marketing Strategies</li>
+                <li><i class="bi bi-check-circle-fill" style="color: #ff5e14;"></i>
+                  Creative
+                  Advertising Campaigns</li>
+                <li><i class="bi bi-check-circle-fill" style="color: #ff5e14;"></i>
+                  Expert Marketing
+                  Team</li>
+                <li><i class="bi bi-check-circle-fill" style="color: #ff5e14;"></i>
+                  Track Record of
+                  Success</li>
+              </ul>
+              <p>
+                Whether you need a full-scale marketing campaign or specific
+                advertising services, we're here to help your business reach
+                new
+                heights.
               </p>
-            </div>
-            <div class="col-lg-6">
-              <div class="content ps-0 ps-lg-5">
-                <p class="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                  seddoeiusmod tempor incididunt ut labore et dolore magna
-                  aliqua.
-                </p>
-                <ul>
-                  <li><i class="bi bi-check-circle-fill" style="color: #ff5e14;"></i> Customized
-                    Marketing Strategies</li>
-                  <li><i class="bi bi-check-circle-fill" style="color: #ff5e14;"></i> Creative
-                    Advertising Campaigns</li>
-                  <li><i class="bi bi-check-circle-fill" style="color: #ff5e14;"></i> Expert Marketing
-                    Team</li>
-                  <li><i class="bi bi-check-circle-fill" style="color: #ff5e14;"></i> Track Record of
-                    Success</li>
-                </ul>
-                <p>
-                  Whether you need a full-scale marketing campaign or specific
-                  advertising services, we're here to help your business reach
-                  new
-                  heights.
-                </p>
 
-                <div class="position-relative mt-4">
-                  <img src="assets/img/about-2.jpg" class="img-fluid rounded-4"
-                    alt>
-                  <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ"
-                    class="glightbox play-btn"></a>
-                </div>
+              <div class="position-relative mt-4">
+                <img src="assets/img/about-2.jpg" class="img-fluid rounded-4"
+                  alt>
+                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ"
+                  class="glightbox play-btn"></a>
               </div>
             </div>
           </div>
-
         </div>
-      </section><!-- End About Us Section -->
 
-      <!-- ======= Clients Section ======= -->
-      <section id="clients" class="clients">
-        <div class="container" data-aos="zoom-out">
+      </div>
+    </section><!-- End About Us Section -->
 
-          <div class="clients-slider swiper">
-            <div class="swiper-wrapper align-items-center">
-              <div class="swiper-slide"><img
-                  src="assets/img/clients/client-1.png"
-                  class="img-fluid" alt></div>
-              <div class="swiper-slide"><img
-                  src="assets/img/clients/client-2.png"
-                  class="img-fluid" alt></div>
-              <div class="swiper-slide"><img
-                  src="assets/img/clients/client-3.png"
-                  class="img-fluid" alt></div>
-              <div class="swiper-slide"><img
-                  src="assets/img/clients/client-4.png"
-                  class="img-fluid" alt></div>
-              <div class="swiper-slide"><img
-                  src="assets/img/clients/client-5.png"
-                  class="img-fluid" alt></div>
-              <div class="swiper-slide"><img
-                  src="assets/img/clients/client-6.png"
-                  class="img-fluid" alt></div>
-              <div class="swiper-slide"><img
-                  src="assets/img/clients/client-7.png"
-                  class="img-fluid" alt></div>
-              <div class="swiper-slide"><img
-                  src="assets/img/clients/client-8.png"
-                  class="img-fluid" alt></div>
-            </div>
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients">
+      <div class="container" data-aos="zoom-out">
+
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img
+                src="assets/img/clients/client-1.png"
+                class="img-fluid" alt></div>
+            <div class="swiper-slide"><img
+                src="assets/img/clients/client-2.png"
+                class="img-fluid" alt></div>
+            <div class="swiper-slide"><img
+                src="assets/img/clients/client-3.png"
+                class="img-fluid" alt></div>
+            <div class="swiper-slide"><img
+                src="assets/img/clients/client-4.png"
+                class="img-fluid" alt></div>
+            <div class="swiper-slide"><img
+                src="assets/img/clients/client-5.png"
+                class="img-fluid" alt></div>
+            <div class="swiper-slide"><img
+                src="assets/img/clients/client-6.png"
+                class="img-fluid" alt></div>
+            <div class="swiper-slide"><img
+                src="assets/img/clients/client-7.png"
+                class="img-fluid" alt></div>
+            <div class="swiper-slide"><img
+                src="assets/img/clients/client-8.png"
+                class="img-fluid" alt></div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Clients Section -->
+
+    <!-- ======= Stats Counter Section ======= -->
+    <section id="stats-counter" class="stats-counter">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4 align-items-center">
+
+          <div class="col-lg-6">
+            <img src="assets/img/stats-img.png" alt class="img-fluid">
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="stats-item d-flex align-items-center">
+              <span data-purecounter-start="0" data-purecounter-end="232"
+                data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Happy Clients</strong> consequuntur quae diredo para
+                mesta</p>
+            </div><!-- End Stats Item -->
+
+            <div class="stats-item d-flex align-items-center">
+              <span data-purecounter-start="0" data-purecounter-end="521"
+                data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Projects</strong> adipisci atque cum quia aut</p>
+            </div><!-- End Stats Item -->
+
+            <div class="stats-item d-flex align-items-center">
+              <span data-purecounter-start="0" data-purecounter-end="453"
+                data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Hours Of Support</strong> aut commodi quaerat</p>
+            </div><!-- End Stats Item -->
+
           </div>
 
         </div>
-      </section><!-- End Clients Section -->
 
-      <!-- ======= Stats Counter Section ======= -->
-      <section id="stats-counter" class="stats-counter">
-        <div class="container" data-aos="fade-up">
+      </div>
+    </section><!-- End Stats Counter Section -->
 
-          <div class="row gy-4 align-items-center">
-
-            <div class="col-lg-6">
-              <img src="assets/img/stats-img.png" alt class="img-fluid">
-            </div>
-
-            <div class="col-lg-6">
-
-              <div class="stats-item d-flex align-items-center">
-                <span data-purecounter-start="0" data-purecounter-end="232"
-                  data-purecounter-duration="1" class="purecounter"></span>
-                <p><strong>Happy Clients</strong> consequuntur quae diredo para
-                  mesta</p>
-              </div><!-- End Stats Item -->
-
-              <div class="stats-item d-flex align-items-center">
-                <span data-purecounter-start="0" data-purecounter-end="521"
-                  data-purecounter-duration="1" class="purecounter"></span>
-                <p><strong>Projects</strong> adipisci atque cum quia aut</p>
-              </div><!-- End Stats Item -->
-
-              <div class="stats-item d-flex align-items-center">
-                <span data-purecounter-start="0" data-purecounter-end="453"
-                  data-purecounter-duration="1" class="purecounter"></span>
-                <p><strong>Hours Of Support</strong> aut commodi quaerat</p>
-              </div><!-- End Stats Item -->
-
-            </div>
-
-          </div>
-
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="service-section">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Our Services</h2>
+          <span class="line"></span>
+          <p>
+            Explore our range of services designed to boost your business.
+          </p>
         </div>
-      </section><!-- End Stats Counter Section -->
 
-      <!-- ======= Services Section ======= -->
-      <section id="stats-counter" class="service-section">
-        <div class="container" data-aos="fade-up">
-          <div class="section-header">
-            <h2>Our Services</h2>
-            <span class="line"></span>
-            <p>
-              Explore our range of services designed to boost your business.
-            </p>
-          </div>
+        <div class="services-grid">
+          <div class="service service1">
+            <i class="ti-bar-chart"></i>
+            <h4>Wealth Management</h4>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <a href="#" class="service-cta">Read More <span
+                class="ti-angle-right"></a>
+            </div>
 
-          <div class="services-grid">
-            <div class="service service1">
-              <i class="ti-bar-chart"></i>
-              <h4>Wealth Management</h4>
+            <div class="service service2">
+              <i class="ti-light-bulb"></i>
+              <h4>Financial Planning</h4>
               <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco
                 laboris nisi ut aliquip ex ea commodo consequat.</p>
               <a href="#" class="service-cta">Read More <span
                   class="ti-angle-right"></a>
               </div>
 
-              <div class="service service2">
-                <i class="ti-light-bulb"></i>
-                <h4>Financial Planning</h4>
+              <div class="service service3">
+                <i class="ti-money"></i>
+                <h4>Investment Banking</h4>
                 <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco
                   laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <a href="#" class="service-cta">Read More <span
-                    class="ti-angle-right"></a>
-                </div>
-
-                <div class="service service3">
-                  <i class="ti-money"></i>
-                  <h4>Investment Banking</h4>
-                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat.</p>
-                  <a href="#" class="service-cta">Read more <span
-                      class="ti-angle-right"></span></a>
-                </div>
+                <a href="#" class="service-cta">Read more <span
+                    class="ti-angle-right"></span></a>
               </div>
             </div>
-          </section>
-          <!-- End Services Section -->
+          </div>
+        </section>
+        <!-- End Services Section -->
 
-          <!--Mobile app section-->
-          <section class="gallery">
-            <div class="container" data-aos="flip-down">
-              <div class="row">
-                <div class="col-lg-4 col-md-4">
-                  <span>success</span>
-                  <h1>Elevate Your Brand</h1>
-                  <hr>
-                  <p>We are your strategic partners in achieving business growth and success. Our expert team 
-                    specializes in crafting captivating marketing strategies and advertising campaigns that 
-                    drive results.</p>
-                  <button class="button-gallery" role="button">Get Started</button>
-                </div>
-                <div class="swiper gallery-swiper col-lg col-md">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide swiper-slide--one">
-                      <div>
-                        <h2>Strategic Excellence</h2>
-                        <p>Our dedicated team of experts crafts marketing strategies that are 
-                          tailored to your business needs. We're here to help you reach your 
-                          goals with precision and excellence.</p>
-                        <a href="https://en.wikipedia.org/wiki/Jellyfish"
-                          target="_blank">Start Growing Together</a>
-                      </div>
-                    </div>
-                    <div class="swiper-slide swiper-slide--two">
-                      <div>
-                        <h2>Creative Campaigns</h2>
-                        <p>
-                          Discover the power of creativity in advertising. Our campaigns are designed to captivate your audience and leave a lasting impact on your brand. Let's tell your story like never before.
-                        </p>
-                        <a href="https://en.wikipedia.org/wiki/Seahorse"
-                          target="_blank">Start Growing Together</a>
-                      </div>
-                    </div>
-
-                    <div class="swiper-slide swiper-slide--three">
-
-                      <div>
-                        <h2>Results-Driven Approach</h2>
-                        <p>
-                          We measure our success by the results we deliver. With a data-driven approach, we ensure that your investment in marketing and advertising yields substantial returns for your business.
-                        </p>
-                        <a href="https://en.wikipedia.org/wiki/Octopus"
-                          target="_blank">Start Growing Together</a>
-                      </div>
-                    </div>
-
-                    <div class="swiper-slide swiper-slide--four">
-
-                      <div>
-                        <h2>Collaborative Partnership</h2>
-                        <p>
-                          Your success is our success. We believe in working hand in hand with our clients to achieve outstanding results. Let's build a strong and collaborative partnership for your business growth.
-                        </p>
-                        <a href="https://en.wikipedia.org/wiki/Shark"
-                          target="_blank">Start Growing Together</a>
-                      </div>
-                    </div>
-
-                    <div class="swiper-slide swiper-slide--five">
-
-                      <div>
-                        <h2>Join Our Network</h2>
-                        <p>
-                          Join a network of businesses that have experienced remarkable growth and success with our marketing and advertising solutions. Let's connect and explore endless possibilities together.
-                        </p>
-                        <a href="https://en.wikipedia.org/wiki/Dolphin"
-                          target="_blank">Start Growing Together</a>
-                      </div>
+        <!--Mobile app section-->
+        <section class="gallery">
+          <div class="container" data-aos="flip-down">
+            <div class="row">
+              <div class="col-lg-4 col-md-4">
+                <h3>Elevate Your Brand</h3>
+                <hr>
+                <p>We are your strategic partners in achieving business growth
+                  and success. Our expert team
+                  specializes in crafting captivating marketing strategies and
+                  advertising campaigns that
+                  drive results.</p>
+                <button class="button-gallery" role="button">Get Started</button>
+              </div>
+              <div class="swiper gallery-swiper col-lg col-md">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide swiper-slide--one">
+                    <div class="overlay">
+                      <h2>Strategic Excellence</h2>
+                      <p>Our dedicated team of experts crafts marketing
+                        strategies that are
+                        tailored to your business needs. We're here to help you
+                        reach your
+                        goals with precision and excellence.</p>
+                      <a href="https://en.wikipedia.org/wiki/Jellyfish"
+                        target="_blank">Start Growing Together</a>
                     </div>
                   </div>
-                  <!-- Add Pagination -->
-                  <div class="swiper-pagination"></div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!--End Mobile app section-->
-
-          <!-- ======= Cta Section ======= -->
-          <section id="cta" class="cta">
-            <div class="container" data-aos="zoom-in">
-
-              <div class="row">
-                <div class="col-lg-9 text-center text-lg-start">
-                  <h3>Call To Action</h3>
-                  <p> Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat
-                    cupidatat non proident, sunt in culpa qui officia deserunt
-                    mollit anim id est laborum.</p>
-                </div>
-                <div class="col-lg-3 cta-btn-container text-center">
-                  <a class="cta-btn align-middle" href="#">Call To Action</a>
-                </div>
-              </div>
-
-            </div>
-          </section><!-- End Cta Section -->
-
-          <!-- ======= Contact Section ======= -->
-          <section id="contact" class="contact">
-            <div class="container" data-aos="fade-up">
-
-              <div class="section-header">
-                <h2>Contact</h2>
-                <span class="line"></span>
-                <p>
-                  If you have any questions or would like to discuss your
-                  marketing needs, please don't hesitate to get in touch. We are
-                  here to help you succeed.
-                </p>
-              </div>
-
-              <div class="row">
-
-                <div class="col-lg-5 d-flex align-items-stretch">
-                  <div class="info">
-                    <div class="address">
-                      <i class="bi bi-geo-alt"></i>
-                      <h4>Location:</h4>
-                      <p>123 Marketing Street, City, Country</p>
+                  <div class="swiper-slide swiper-slide--two">
+                    <div class="overlay">
+                      <h2>Creative Campaigns</h2>
+                      <p>
+                        Discover the power of creativity in advertising. Our
+                        campaigns are designed to captivate your audience and
+                        leave a lasting impact on your brand. Let's tell your
+                        story like never before.
+                      </p>
+                      <a href="https://en.wikipedia.org/wiki/Seahorse"
+                        target="_blank">Start Growing Together</a>
                     </div>
-
-                    <div class="email">
-                      <i class="bi bi-envelope"></i>
-                      <h4>Email:</h4>
-                      <p>info@yourcompany.com</p>
-                    </div>
-
-                    <div class="phone">
-                      <i class="bi bi-phone"></i>
-                      <h4>Call:</h4>
-                      <p>+1 234 567890</p>
-                    </div>
-
-                    <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
-                      frameborder="0"
-                      style="border:0; width: 100%; height: 290px;"
-                      allowfullscreen></iframe>
                   </div>
 
-                </div>
+                  <div class="swiper-slide swiper-slide--three">
 
-                <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-                  <form action="forms/contact.php" method="post" role="form"
-                    class="php-email-form">
-                    <div class="row">
-                      <div class="form-group col-md-6">
-                        <label for="name">Your Name</label>
-                        <input type="text" name="name" class="form-control"
-                          id="name" required>
-                      </div>
-                      <div class="form-group col-md-6">
-                        <label for="name">Your Email</label>
-                        <input type="email" class="form-control" name="email"
-                          id="email" required>
-                      </div>
+                    <div class="overlay">
+                      <h2>Results-Driven Approach</h2>
+                      <p>
+                        We measure our success by the results we deliver. With a
+                        data-driven approach, we ensure that your investment in
+                        marketing and advertising yields substantial returns for
+                        your business.
+                      </p>
+                      <a href="https://en.wikipedia.org/wiki/Octopus"
+                        target="_blank">Start Growing Together</a>
                     </div>
-                    <div class="form-group">
-                      <label for="name">Subject</label>
-                      <input type="text" class="form-control" name="subject"
-                        id="subject" required>
+                  </div>
+
+                  <div class="swiper-slide swiper-slide--four">
+
+                    <div class="overlay">
+                      <h2>Collaborative Partnership</h2>
+                      <p>
+                        Your success is our success. We believe in working hand
+                        in hand with our clients to achieve outstanding results.
+                        Let's build a strong and collaborative partnership for
+                        your business growth.
+                      </p>
+                      <a href="https://en.wikipedia.org/wiki/Shark"
+                        target="_blank">Start Growing Together</a>
                     </div>
-                    <div class="form-group">
-                      <label for="name">Message</label>
-                      <textarea class="form-control" name="message" rows="10"
-                        required></textarea>
+                  </div>
+
+                  <div class="swiper-slide swiper-slide--five">
+
+                    <div class="overlay ">
+                      <h2>Join Our Network</h2>
+                      <p>
+                        Join a network of businesses that have experienced
+                        remarkable growth and success with our marketing and
+                        advertising solutions. Let's connect and explore endless
+                        possibilities together.
+                      </p>
+                      <a href="https://en.wikipedia.org/wiki/Dolphin"
+                        target="_blank">Start Growing Together</a>
                     </div>
-                    <div class="my-3">
-                      <div class="loading">Loading</div>
-                      <div class="error-message"></div>
-                      <div class="sent-message">Your message has been sent.
-                        Thank
-                        you!</div>
-                    </div>
-                    <div class="text-center"><button type="submit">Send Message</button></div>
-                  </form>
+                  </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--End Mobile app section-->
+
+        <!-- ======= Cta Section ======= -->
+        <section id="cta" class="cta">
+          <div class="container" data-aos="zoom-in">
+
+            <div class="row">
+              <div class="col-lg-9 text-center text-lg-start">
+                <h3>Call To Action</h3>
+                <p> Duis aute irure dolor in reprehenderit in voluptate velit
+                  esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                  occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.</p>
+              </div>
+              <div class="col-lg-3 cta-btn-container text-center">
+                <a class="cta-btn align-middle" href="#">Call To Action</a>
+              </div>
+            </div>
+
+          </div>
+        </section><!-- End Cta Section -->
+
+        <!-- ======= Contact Section ======= -->
+        <section id="contact" class="contact">
+          <div class="container" data-aos="fade-up">
+
+            <div class="section-header pb-5">
+              <h2>Contact</h2>
+              <span class="line"></span>
+              <p>
+                If you have any questions or would like to discuss your
+                marketing needs, please don't hesitate to get in touch. We are
+                here to help you succeed.
+              </p>
+            </div>
+
+            <div class="row">
+
+              <div class="col-lg-5 d-flex align-items-stretch">
+                <div class="info">
+                  <div class="address">
+                    <i class="bi bi-geo-alt"></i>
+                    <h4>Location:</h4>
+                    <p>123 Marketing Street, City, Country</p>
+                  </div>
+
+                  <div class="email">
+                    <i class="bi bi-envelope"></i>
+                    <h4>Email:</h4>
+                    <p>info@yourcompany.com</p>
+                  </div>
+
+                  <div class="phone">
+                    <i class="bi bi-phone"></i>
+                    <h4>Call:</h4>
+                    <p>+1 234 567890</p>
+                  </div>
+
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+                    frameborder="0"
+                    style="border:0; width: 100%; height: 290px;"
+                    allowfullscreen></iframe>
                 </div>
 
               </div>
 
-            </div>
-          </section><!-- End Contact Section -->
+              <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+                <form action="forms/contact.php" method="post" role="form"
+                  class="php-email-form">
+                  <div class="row">
+                    <div class="form-group col-md-6">
+                      <label for="name">Your Name</label>
+                      <input type="text" name="name" class="form-control"
+                        id="name" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="name">Your Email</label>
+                      <input type="email" class="form-control" name="email"
+                        id="email" required>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="name">Subject</label>
+                    <input type="text" class="form-control" name="subject"
+                      id="subject" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="name">Message</label>
+                    <textarea class="form-control" name="message" rows="10"
+                      required></textarea>
+                  </div>
+                  <div class="my-3">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent.
+                      Thank
+                      you!</div>
+                  </div>
+                  <div class="text-center"><button type="submit">Send Message</button></div>
+                </form>
+              </div>
 
-          <section class="newsletter">
-            <div class="container" data-aos="zoom-in-left">
-              <div class="row justify-content-center">
-                <div class="col-lg-6">
-                  <h4>Join Our Newsletter</h4>
-                  <p>Tamen quem nulla quae legam multos aute sint culpa legam
-                    noster
-                    magna</p>
-                  <form action method="post">
-                    <input type="email" name="email"><input type="submit"
-                      value="Subscribe">
-                  </form>
-                </div>
+            </div>
+
+          </div>
+        </section><!-- End Contact Section -->
+
+        <section class="newsletter">
+          <div class="container" data-aos="zoom-in-left">
+            <div class="row justify-content-center">
+              <div class="col-lg-6">
+                <h4>Join Our Newsletter</h4>
+                <p>Tamen quem nulla quae legam multos aute sint culpa legam
+                  noster
+                  magna</p>
+                <form action method="post">
+                  <input type="email" name="email"><input type="submit"
+                    value="Subscribe">
+                </form>
               </div>
             </div>
-          </section>
+          </div>
+        </section>
 
-        <!-- Site footer -->
+        <!-- Footer -->
         <footer class="footer-section">
           <div class="container">
             <div class="footer-content pt-5 pb-5">
@@ -513,15 +543,17 @@
                   <div class="footer-widget">
                     <div class="footer-logo">
                       <a href="index.html"><img
-                          src="https://i.ibb.co/QDy827D/ak-logo.png"
-                          class="img-fluid" alt="logo"></a>
+                          src="assets/img/stevolve.png"
+                          class="img-fluid" alt="logo" width="120"></a>
                     </div>
                     <div class="footer-text">
-                      <p>Lorem ipsum dolor sit amet, consec tetur adipisicing
-                        elit,
-                        sed do eiusmod tempor incididuntut consec tetur
-                        adipisicing
-                        elit,Lorem ipsum dolor sit amet.</p>
+                      <p>
+                        Devoted group of professionals in the field of
+                        marketing and advertising, wholeheartedly dedicated
+                        to assisting businesses in achieving success by
+                        implementing powerful marketing tactics and innovative
+                        promotional initiatives.
+                      </p>
                     </div>
                     <div class="social-links mt-3">
                       <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
@@ -577,8 +609,8 @@
               <div class="row">
                 <div class="col-xl-6 col-lg-6 text-center text-lg-left">
                   <div class="copyright-text">
-                    <p>Copyright &copy; 2018, All Right Reserved <a
-                        href="https://codepen.io/anupkumar92/">Anup</a></p>
+                    <p>Copyright &copy; 2023, All Right Reserved <a
+                        href="https://github.com/munuhee">StEvolve</a></p>
                   </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
@@ -598,37 +630,76 @@
         </footer>
         <!--End footer-->
 
-        <!-- Cursor -->
-        <div class='cursor' id="cursor"></div>
-        <div class='cursor2' id="cursor2"></div>
-        <div class='cursor3' id="cursor3"></div>
-        <!-- End Cursor -->
+        <!--Whatsapp chat-->
+        <div id='whatsapp-chat' class='hide'>
+          <div class='whatsapp-chat-header'>
+            <div class='whatsapp-chat-avatar'>
+              <img
+                src='assets/img/chat-logo.png'
+                alt="StEvelove Logo" />
+            </div>
+            <div class="whatsapp-chat-name"><span class="chat-name">
+                StEvolve
+              </span><br><small>Typically responds within one hour.</div>
+            </div>
 
-        <!--Preloader-->
-        <div id="preloader"></div>
+            <div class='start-chat'>
+              <div
+                pattern="https://elfsight.com/assets/chats/patterns/whatsapp.png"
+                class="whatsapp-component whatsapp-chat-body">
+                <div class="p-2 whatsapp-message-container">
+                  <div style="opacity: 1;" class="whatsapp-message">
+                    <div class="whatsapp-text text-dark">
+                      <p>
+                        Hello there!
+                        How can I help you?
+                      </p>
+                    </div>
+                    <div class="whatsapp-time text-dark"><small
+                        id="current-time"></small></div>
+                  </div>
+                </div>
+              </div>
+              <div class="input-container">
+                <input type="text" class="message-input"
+                  placeholder="Type a message...">
+                <button class="send-button">&#9658;</button>
+              </div>
+            </div>
+            <div id='get-number'></div>
+            <a class='close-chat' href='javascript:void'>×</a>
+          </div>
+          <a class='chat-toggler' href='javascript:void' title='Show Chat'><i
+              class="bi bi-chat-right-text"></i> Chat</a>
+          <!--End Whatsapp chat-->
 
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script
-          src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-        <script
-          src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+          <!-- Cursor -->
+          <div class='cursor' id="cursor"></div>
+          <div class='cursor2' id="cursor2"></div>
+          <div class='cursor3' id="cursor3"></div>
+          <!-- End Cursor -->
 
-        <script src="assets/vendor/aos/aos.js"></script>
-        <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-        <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-        <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-        <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-        <script src="assets/vendor/php-email-form/validate.js"></script>
-        <script>
-            window.addEventListener("scroll", function() {
-            const header = document.getElementById("header");
-            if (window.scrollY > 0) {
-              header.classList.add("scrolled");
-            } else {
-              header.classList.remove("scrolled");
-            }
-          </script>
+          <!--Preloader-->
+          <div id="preloader"></div>
 
-        <script src="assets/js/main.js"></script>
-      </body>
-    </html>
+          <!--Back to top-->
+          <a href="#"
+            class="back-to-top d-flex align-items-center justify-content-center"><i
+              class="bi bi-arrow-up-short"></i></a>
+
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+          <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+          <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+          <script src="assets/vendor/aos/aos.js"></script>
+          <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+          <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+          <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+          <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+          <script src="assets/vendor/php-email-form/validate.js"></script>
+
+          <script src="assets/js/main.js"></script>
+        </body>
+      </html>
