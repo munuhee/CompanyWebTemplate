@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +22,8 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
 
-  <body>
+  <body id="content">
+    <!-- Header -->
     <!-- Header -->
     <header id="header" class="header d-flex align-items-center">
       <div
@@ -35,10 +37,24 @@
             <li><a href="#hero">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav><!-- .navbar -->
+        <!-- Translate Button and Dropdown -->
+        <div class="dropdown">
+          <button class="btn dropdown-toggle" type="button"
+            id="languageDropdown" data-bs-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <span><i class="bi bi-globe"></i> En</span>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="languageDropdown">
+            <a class="dropdown-item" href="#" id="translateToSpanish">Spanish</a>
+            <a class="dropdown-item" href="#" id="translateToFrench">French</a>
+            <a class="dropdown-item" href="#" id="translateToChinese">Chinese</a>
+            <a class="dropdown-item" href="#" id="translateToEnglish">English</a>
+          </div>
+        </div>
         <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
         <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
       </div>
@@ -69,20 +85,20 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6 order-1 order-lg-2 hero-img mt-5" data-aos="zoom-in"
-            data-aos-delay="200">
+          <div class="col-lg-6 order-1 order-lg-2 hero-img mt-5"
+            data-aos="zoom-in" data-aos-delay="200">
             <img src="assets/img/hero.png" class="img-fluid" />
           </div>
-      </div>
-      <div class="chat-img" data-aos="flip-up" data-aos-delay="300">
-        <img src="assets/img/chat.png" width="150"/>
-      </div>
-      <div class="balance-img" data-aos="flip-up" data-aos-delay="300">
-        <img src="assets/img/balance.png" width="150"/>
-      </div>
-      <div class="hero-img-bg" data-aos="flip-up" data-aos-delay="300">
-        <img src="assets/img/hero_img_bg.png" width="530"/>
-      </div>
+        </div>
+        <div class="chat-img" data-aos="flip-up" data-aos-delay="300">
+          <img src="assets/img/chat.png" width="150" />
+        </div>
+        <div class="balance-img" data-aos="flip-up" data-aos-delay="300">
+          <img src="assets/img/balance.png" width="150" />
+        </div>
+        <div class="hero-img-bg" data-aos="flip-up" data-aos-delay="300">
+          <img src="assets/img/hero_img_bg.png" width="530" />
+        </div>
       </div>
       <div class="banner-links mt-3">
         <a href="#" title><i class="bi bi-linkedin"></i></a>
@@ -93,7 +109,7 @@
         <span>Follow us -</span>
       </div>
     </section>
-    
+
     <section class="section-boxes-container">
       <div class="row section-boxes ml-4 mr-4 rounded-4" data-aos="zoom-in-down">
         <div class="col-lg-4 col-md-4 col-12 text-center">
@@ -126,6 +142,7 @@
     <!-- ======= About Us Section ======= -->
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
+        <div class="pt-5"></div>
 
         <div class="section-header pb-5">
           <h2>About Us</h2>
@@ -141,8 +158,7 @@
           <div class="col-lg-6">
             <h3>Your Marketing Partner</h3>
             <img src="assets/img/Infinty-Loop-Desktop.gif"
-              class="img-fluid rounded-4 mb-4"
-              alt>
+              class="img-fluid rounded-4 mb-4" alt>
             <p>At our marketing company, we are passionate about providing
               top-notch
               marketing services. Our team works closely with clients to
@@ -203,29 +219,21 @@
 
         <div class="clients-slider swiper">
           <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img
-                src="assets/img/clients/client-1.png"
+            <div class="swiper-slide"><img src="assets/img/clients/client-1.png"
                 class="img-fluid" alt></div>
-            <div class="swiper-slide"><img
-                src="assets/img/clients/client-2.png"
+            <div class="swiper-slide"><img src="assets/img/clients/client-2.png"
                 class="img-fluid" alt></div>
-            <div class="swiper-slide"><img
-                src="assets/img/clients/client-3.png"
+            <div class="swiper-slide"><img src="assets/img/clients/client-3.png"
                 class="img-fluid" alt></div>
-            <div class="swiper-slide"><img
-                src="assets/img/clients/client-4.png"
+            <div class="swiper-slide"><img src="assets/img/clients/client-4.png"
                 class="img-fluid" alt></div>
-            <div class="swiper-slide"><img
-                src="assets/img/clients/client-5.png"
+            <div class="swiper-slide"><img src="assets/img/clients/client-5.png"
                 class="img-fluid" alt></div>
-            <div class="swiper-slide"><img
-                src="assets/img/clients/client-6.png"
+            <div class="swiper-slide"><img src="assets/img/clients/client-6.png"
                 class="img-fluid" alt></div>
-            <div class="swiper-slide"><img
-                src="assets/img/clients/client-7.png"
+            <div class="swiper-slide"><img src="assets/img/clients/client-7.png"
                 class="img-fluid" alt></div>
-            <div class="swiper-slide"><img
-                src="assets/img/clients/client-8.png"
+            <div class="swiper-slide"><img src="assets/img/clients/client-8.png"
                 class="img-fluid" alt></div>
           </div>
         </div>
@@ -247,20 +255,23 @@
 
             <div class="stats-item d-flex align-items-center">
               <span data-purecounter-start="0" data-purecounter-end="232"
-                data-purecounter-duration="1" class="purecounter"></span>
+                data-purecounter-duration="1"
+                class="purecounter"></span>
               <p><strong>Happy Clients</strong> consequuntur quae diredo para
                 mesta</p>
             </div><!-- End Stats Item -->
 
             <div class="stats-item d-flex align-items-center">
               <span data-purecounter-start="0" data-purecounter-end="521"
-                data-purecounter-duration="1" class="purecounter"></span>
+                data-purecounter-duration="1"
+                class="purecounter"></span>
               <p><strong>Projects</strong> adipisci atque cum quia aut</p>
             </div><!-- End Stats Item -->
 
             <div class="stats-item d-flex align-items-center">
               <span data-purecounter-start="0" data-purecounter-end="453"
-                data-purecounter-duration="1" class="purecounter"></span>
+                data-purecounter-duration="1"
+                class="purecounter"></span>
               <p><strong>Hours Of Support</strong> aut commodi quaerat</p>
             </div><!-- End Stats Item -->
 
@@ -466,12 +477,10 @@
                     <h4>Call:</h4>
                     <p>+1 234 567890</p>
                   </div>
-
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
-                    frameborder="0"
-                    style="border:0; width: 100%; height: 290px;"
-                    allowfullscreen></iframe>
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.280848680928!2d36.81189438116268!3d-1.2816189792988806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d4ff33ee35%3A0x2c74859636685b55!2sNairobi%20Central%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1699030881108!5m2!1sen!2ske"
+                    style="border:0; width: 100%; height: 290px;" allowfullscreen
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
 
               </div>
@@ -542,16 +551,16 @@
                 <div class="col-xl-4 col-lg-4 mb-50">
                   <div class="footer-widget">
                     <div class="footer-logo">
-                      <a href="index.html"><img
-                          src="assets/img/stevolve.png"
+                      <a href="index.html"><img src="assets/img/stevolve.png"
                           class="img-fluid" alt="logo" width="120"></a>
                     </div>
                     <div class="footer-text">
                       <p>
-                        Devoted group of professionals in the field of
-                        marketing and advertising, wholeheartedly dedicated
-                        to assisting businesses in achieving success by
-                        implementing powerful marketing tactics and innovative
+                        Dedicated
+                        to assisting businesses in achieving
+                        success by
+                        implementing powerful marketing tactics
+                        and innovative
                         promotional initiatives.
                       </p>
                     </div>
@@ -586,18 +595,15 @@
                 <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
                   <div class="footer-widget">
                     <div class="footer-widget-heading">
-                      <h3>Subscribe</h3>
+                      <h3>Translate</h3>
                     </div>
                     <div class="footer-text mb-25">
-                      <p>Don’t miss to subscribe to our new feeds, kindly fill
-                        the
-                        form below.</p>
+                      <p>Lorem ipsum Tamen quem nulla quae legam multos aute
+                        sint culpa legam noster magna</p>
                     </div>
-                    <div class="subscribe-form">
-                      <form action="#">
-                        <input type="text" placeholder="Email Address">
-                        <button><i class="bi bi-telegram"></i></button>
-                      </form>
+                    <div class="translate-container mt-4">
+                      <i id="translate-icon" class="bi bi-translate"></i>
+                      <div id="google_translate_element"></div>
                     </div>
                   </div>
                 </div>
@@ -606,24 +612,9 @@
           </div>
           <div class="copyright-area">
             <div class="container">
-              <div class="row">
-                <div class="col-xl-6 col-lg-6 text-center text-lg-left">
-                  <div class="copyright-text">
-                    <p>Copyright &copy; 2023, All Right Reserved <a
-                        href="https://github.com/munuhee">StEvolve</a></p>
-                  </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
-                  <div class="footer-menu">
-                    <ul>
-                      <li><a href="#">Home</a></li>
-                      <li><a href="#">Terms</a></li>
-                      <li><a href="#">Privacy</a></li>
-                      <li><a href="#">Policy</a></li>
-                      <li><a href="#">Contact</a></li>
-                    </ul>
-                  </div>
-                </div>
+              <div class="text-center copyright-text">
+                <p>Copyright &copy; 2023, All Right Reserved <a
+                    href="https://github.com/munuhee">StEvolve</a></p>
               </div>
             </div>
           </div>
@@ -634,9 +625,7 @@
         <div id='whatsapp-chat' class='hide'>
           <div class='whatsapp-chat-header'>
             <div class='whatsapp-chat-avatar'>
-              <img
-                src='assets/img/chat-logo.png'
-                alt="StEvelove Logo" />
+              <img src='assets/img/chat-logo.png' alt="StEvelove Logo" />
             </div>
             <div class="whatsapp-chat-name"><span class="chat-name">
                 StEvolve
@@ -661,9 +650,9 @@
                 </div>
               </div>
               <div class="input-container">
-                <input type="text" class="message-input"
+                <input type="text" id="message" class="message-input"
                   placeholder="Type a message...">
-                <button class="send-button">&#9658;</button>
+                <button id="send-button" class="send-button">&#9658;</button>
               </div>
             </div>
             <div id='get-number'></div>
@@ -687,12 +676,13 @@
             class="back-to-top d-flex align-items-center justify-content-center"><i
               class="bi bi-arrow-up-short"></i></a>
 
+          <script
+            src='https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'></script>
           <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
           <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
           <script
             src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
           <script src="assets/vendor/aos/aos.js"></script>
           <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
           <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -701,5 +691,19 @@
           <script src="assets/vendor/php-email-form/validate.js"></script>
 
           <script src="assets/js/main.js"></script>
+
+          <script>
+            function googleTranslateElementInit() {
+              const translateConfig = {
+                pageLanguage: 'en',
+                autoDisplay: true,
+                layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+              };
+
+              const translateElement = document.getElementById('google_translate_element');
+              new google.translate.TranslateElement(translateConfig, translateElement);
+            }
+          </script>
         </body>
+
       </html>

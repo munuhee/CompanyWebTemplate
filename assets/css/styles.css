@@ -1,11 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 body {
+  font-family:  'Geologica', sans-serif;
   background: #00000000;
   color: white;
+  top: 0 !important;
+}
+
+body > .skiptranslate {
+  display: none;
 }
 
 a {
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: none;
 }
@@ -19,7 +28,7 @@ a:hover {
   opacity: 0;
   right: 15px;
   bottom: 15px;
-  z-index: 1000;
+  z-index: 10;
   background: #ffffff;
   width: 40px;
   height: 40px;
@@ -98,11 +107,19 @@ section {
   transition: all 0.3s ease;
 }
 
-.header .navbar li a {
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+.header .navbar li a,
+.header .dropdown .btn {
   color: #ffffff;
 }
 
 .header .navbar a:hover,
+.header .dropdown .btn:hover,
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover > a {
@@ -113,7 +130,8 @@ section {
   background-color: rgba(255, 255, 255, 0.822);
 }
 
-.header.scrolled .navbar li a {
+.header.scrolled .navbar li a,
+.header.scrolled .dropdown .btn {
   color: #222;
 }
 
@@ -445,9 +463,11 @@ section {
   opacity: 0;
   visibility: hidden;
 }
+
 .banner-links a:hover {
   color: #ff5e14;
 }
+
 .banner-links span {
   transform: rotate(-90deg) !important;
   padding-right: 80px;
@@ -564,9 +584,11 @@ section {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
@@ -574,8 +596,8 @@ section {
 
 #hero h1 {
   margin: 0 0 10px 0;
-  font-size: 48px;
-  font-weight: 700;
+  font-size: 40px;
+  font-family: 'Montserrat', sans-serif;
   line-height: 56px;
   color: #fff;
 }
@@ -656,9 +678,11 @@ section {
   0% {
     background-position: 0 0;
   }
+
   50% {
     background-position: 400% 0;
   }
+
   100% {
     background-position: 0 0;
   }
@@ -680,26 +704,30 @@ section {
   text-align: center;
   z-index: 1;
 }
-.hero .chat-img{
+
+.hero .chat-img {
   top: 70%;
   right: 50%;
   position: absolute;
   rotate: -10deg;
   opacity: 0.7;
 }
-.hero .balance-img{
-  top: 13%;
-  right: 40%;
+
+.hero .balance-img {
+  top: 15%;
+  right: 47%;
   position: absolute;
   rotate: -5deg;
   opacity: 0.7;
 }
-.hero-img-bg{
+
+.hero-img-bg {
   top: 23%;
   right: 10%;
   position: absolute;
   opacity: 1;
 }
+
 @media (max-width: 991px) {
   .hero {
     height: 100vh;
@@ -813,7 +841,7 @@ section {
   padding: 40px 70px;
   margin-top: -120px;
   position: absolute;
-  z-index: 990;
+  z-index: 9;
 }
 
 .section-boxes .span {
@@ -826,6 +854,7 @@ section {
 .about {
   background: #000000;
 }
+
 .about h3 {
   font-weight: 700;
   font-size: 28px;
@@ -1351,6 +1380,7 @@ section {
     display: flex;
     align-items: center;
   }
+
   .bg,
   .bg2 {
     opacity: 0.1;
@@ -1403,6 +1433,7 @@ section {
     padding: 18px 34px;
   }
 }
+
 /*--------------------------------------------------------------
 # Cta
 --------------------------------------------------------------*/
@@ -1462,13 +1493,13 @@ section {
 .contact {
   background: #000000;
 }
+
 .contact .info {
   border-top: 3px solid #ffffff;
   border-bottom: 3px solid #ffffff;
   padding: 30px;
   background: #222;
   width: 100%;
-  box-shadow: 0 0 24px 0 #ffffff36;
 }
 
 .contact .info i {
@@ -1541,7 +1572,7 @@ section {
   border-bottom: 3px solid #ff5e14;
   padding: 30px;
   background: #000000;
-  box-shadow: 0 0 24px 0 rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0 24px 0 rgba(255, 255, 255, 0.09);
 }
 
 .contact .php-email-form .form-group {
@@ -1711,54 +1742,63 @@ section {
 .footer-section {
   background: #151414;
   position: relative;
+  z-index: 1;
 }
+
+.footer-pattern {
+  position: relative;
+  background: url(../img/footer_pattern.png);
+  background-size: cover;
+}
+
 .footer-cta {
   border-bottom: 1px solid #373636;
 }
+
 .single-cta i {
   color: #ff5e14;
   font-size: 30px;
   float: left;
   margin-top: 8px;
 }
+
 .cta-text {
   padding-left: 15px;
   display: inline-block;
 }
+
 .cta-text h4 {
   color: #fff;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 2px;
 }
+
 .cta-text span {
   color: #757575;
   font-size: 15px;
 }
+
 .footer-content {
   position: relative;
   z-index: 2;
 }
-.footer-pattern img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 330px;
-  background-size: cover;
-  background-position: 100% 100%;
-}
+
 .footer-logo {
   margin-bottom: 30px;
 }
+
 .footer-logo img {
   max-width: 200px;
 }
+
 .footer-text p {
   margin-bottom: 14px;
   font-size: 14px;
   color: #7e7e7e;
   line-height: 28px;
 }
+
 .footer-social-icon span {
   color: #fff;
   display: block;
@@ -1767,11 +1807,13 @@ section {
   font-family: "Poppins", sans-serif;
   margin-bottom: 20px;
 }
+
 .footer-social-icon a {
   color: #fff;
   font-size: 16px;
   margin-right: 15px;
 }
+
 .footer-social-icon i {
   height: 40px;
   width: 40px;
@@ -1779,15 +1821,19 @@ section {
   line-height: 38px;
   border-radius: 50%;
 }
+
 .facebook-bg {
   background: #3b5998;
 }
+
 .twitter-bg {
   background: #55acee;
 }
+
 .google-bg {
   background: #dd4b39;
 }
+
 .footer-widget-heading h3 {
   color: #fff;
   font-size: 20px;
@@ -1795,6 +1841,7 @@ section {
   margin-bottom: 40px;
   position: relative;
 }
+
 .footer-widget-heading h3::before {
   content: "";
   position: absolute;
@@ -1804,23 +1851,33 @@ section {
   width: 50px;
   background: #ff5e14;
 }
+
 .footer-widget ul li {
-  display: inline-block;
   float: left;
   width: 50%;
   margin-bottom: 12px;
+  display: inline-block;
 }
+
 .footer-widget ul li a:hover {
   color: #ff5e14;
 }
+
+.footer-widget-services ul li {
+  float: none !important;
+  width: 100% !important;
+}
+
 .footer-widget ul li a {
   color: #878787;
   text-transform: capitalize;
 }
+
 .subscribe-form {
   position: relative;
   overflow: hidden;
 }
+
 .subscribe-form input {
   width: 100%;
   padding: 14px 28px;
@@ -1828,6 +1885,7 @@ section {
   border: 1px solid #2e2e2e;
   color: #fff;
 }
+
 .subscribe-form button {
   position: absolute;
   right: 0;
@@ -1836,30 +1894,76 @@ section {
   border: 1px solid #ff5e14;
   top: 0;
 }
+
 .subscribe-form button i {
   color: #fff;
   font-size: 22px;
   transform: rotate(-6deg);
 }
+
+.goog-logo-link,
+.goog-te-gadget span {
+  display: none !important;
+}
+
+.goog-te-gadget {
+  font-size: 0px !important;
+}
+
+.translate-container {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  width: fit-content;
+  color: #ff5e14;
+  border-radius: 12px;
+}
+
+#translate-icon {
+  margin-left: 15px;
+}
+
+#google_translate_element {
+  width: 100%;
+  padding: 10px;
+}
+
+#google_translate_element select {
+  background: #f6edfd;
+  color: #ff5e14;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+}
+
+#google_translate_element select:focus {
+  border: none;
+}
+
 .copyright-area {
   background: #202020;
   padding: 25px 0;
 }
+
 .copyright-text p {
   margin: 0;
   font-size: 14px;
   color: #878787;
 }
+
 .copyright-text p a {
   color: #ff5e14;
 }
+
 .footer-menu li {
   display: inline-block;
   margin-left: 20px;
 }
+
 .footer-menu li:hover a {
   color: #ff5e14;
 }
+
 .footer-menu li a {
   font-size: 14px;
   color: #878787;
@@ -1950,7 +2054,7 @@ section {
   bottom: 70px;
   left: 20px;
   overflow: hidden;
-  z-index: 99;
+  z-index: 10;
   animation-name: showchat;
   animation-duration: 0.5s;
   transform: scale(1);
@@ -1981,6 +2085,7 @@ a.chat-toggler i {
   color: #fff;
   padding: 10px;
 }
+
 .whatsapp-chat-header h3 {
   margin: 0;
 }
@@ -1988,12 +2093,15 @@ a.chat-toggler i {
 .whatsapp-chat-name {
   margin-top: -25px;
 }
+
 .whatsapp-chat-name .chat-name {
   font-weight: 600;
 }
+
 .whatsapp-chat-avatar {
   margin-bottom: 20px;
 }
+
 .whatsapp-chat-avatar:after {
   content: "";
   bottom: 0px;
@@ -2021,18 +2129,22 @@ a.chat-toggler i {
 .info-chat span {
   display: block;
 }
+
 #get-label,
 span.chat-label {
   color: #888;
 }
+
 #get-nama,
 span.chat-nama {
   color: #222;
 }
+
 #get-label,
 #get-nama {
   color: #fff;
 }
+
 span.my-number {
   display: none;
 }
@@ -2069,9 +2181,11 @@ span.my-number {
   background-color: #fff;
   border-top: 1px solid #ddd;
 }
+
 .send-msg {
   background-color: #fff;
 }
+
 textarea#chat-input {
   border: none;
   width: 100%;
@@ -2088,6 +2202,7 @@ a#send-it {
   padding: 10px 10px 0;
   background: #fff;
 }
+
 a#send-it svg {
   fill: #a6a6a6;
   height: 20px;
@@ -2099,6 +2214,7 @@ a#send-it svg {
   padding: 30px;
   text-align: center;
 }
+
 .first-msg span {
   background: #e2e2e2;
   color: #333;
@@ -2109,9 +2225,11 @@ a#send-it svg {
 .start-chat .message-box {
   display: flex;
 }
+
 #get-number {
   display: none;
 }
+
 a.close-chat {
   position: absolute;
   top: 5px;
@@ -2125,9 +2243,11 @@ a.close-chat {
   0% {
     background-color: rgb(182, 181, 186);
   }
+
   15% {
     background-color: rgb(17, 17, 17);
   }
+
   25% {
     background-color: rgb(182, 181, 186);
   }
@@ -2137,9 +2257,11 @@ a.close-chat {
   15% {
     background-color: rgb(182, 181, 186);
   }
+
   25% {
     background-color: rgb(17, 17, 17);
   }
+
   35% {
     background-color: rgb(182, 181, 186);
   }
@@ -2149,9 +2271,11 @@ a.close-chat {
   25% {
     background-color: rgb(182, 181, 186);
   }
+
   35% {
     background-color: rgb(17, 17, 17);
   }
+
   45% {
     background-color: rgb(182, 181, 186);
   }
@@ -2163,12 +2287,14 @@ a.close-chat {
     opacity: 0;
   }
 }
+
 @keyframes showchat {
   from {
     transform: scale(0);
     opacity: 0;
   }
 }
+
 @media screen and (max-width: 480px) {
   #whatsapp-chat {
     width: auto;
@@ -2176,6 +2302,7 @@ a.close-chat {
     right: 5%;
   }
 }
+
 .hide {
   display: none;
   animation-name: showhide;
@@ -2183,6 +2310,7 @@ a.close-chat {
   transform: scale(1);
   opacity: 1;
 }
+
 .show {
   display: block;
   animation-name: showhide;
@@ -2216,6 +2344,7 @@ a.close-chat {
   background-color: rgb(230, 221, 212);
   position: relative;
 }
+
 .whatsapp-chat-body:before {
   display: block;
   position: absolute;
@@ -2227,4 +2356,162 @@ a.close-chat {
   z-index: 0;
   opacity: 0.08;
   background-image: url("https://elfsight.com/assets/chats/patterns/whatsapp.png");
+}
+
+/*--------------------------------------------------------------
+# Portfolio Section
+--------------------------------------------------------------*/
+.portfolio .portfolio-flters {
+  padding: 0 0 20px 0;
+  margin: 0 auto;
+  list-style: none;
+  text-align: center;
+}
+
+.portfolio .portfolio-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 10px;
+  line-height: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.portfolio .portfolio-flters li:hover,
+.portfolio .portfolio-flters li.filter-active {
+  color: var(--color-primary);
+}
+
+.portfolio .portfolio-flters li:first-child {
+  margin-left: 0;
+}
+
+.portfolio .portfolio-flters li:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 575px) {
+  .portfolio .portfolio-flters li {
+    font-size: 14px;
+    margin: 0 5px;
+  }
+}
+
+.portfolio .portfolio-wrap {
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.portfolio .portfolio-wrap img {
+  transition: 0.3s;
+  position: relative;
+  z-index: 1;
+}
+
+.portfolio .portfolio-wrap .portfolio-info {
+  padding: 25px 20px;
+  background-color: #ffffff;
+  position: relative;
+  border-top: 1px solid #f3f3f3;
+  z-index: 2;
+}
+
+.portfolio .portfolio-wrap .portfolio-info h4 {
+  font-size: 18px;
+  font-weight: 600;
+  padding-right: 50px;
+}
+
+.portfolio .portfolio-wrap .portfolio-info h4 a {
+  color: #ff5e14;
+  transition: 0.3s;
+}
+
+.portfolio .portfolio-wrap .portfolio-info h4 a:hover {
+  color: #742e0d;
+}
+
+.portfolio .portfolio-wrap .portfolio-info p {
+  color: #222;
+  font-size: 14px;
+  margin-bottom: 0;
+  padding-right: 50px;
+}
+
+.portfolio .portfolio-wrap:hover img {
+  transform: scale(1.1);
+}
+
+/*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+.breadcrumbs {
+  position: relative;
+  background: linear-gradient(
+    300deg,
+    rgba(206, 24, 206, 0.97),
+    rgba(14, 16, 124, 0.97)
+  );
+  background-size: cover;
+  min-height: 50vh;
+  margin-top: 0;
+  top: 0;
+  padding-top: 100px;
+}
+
+.breadcrumbs .page-header {
+  padding: 60px 0 60px 0;
+  position: relative;
+  background-color: var(--color-primary);
+}
+
+.breadcrumbs .page-header h2 {
+  font-size: 56px;
+  font-weight: 500;
+  color: #fff;
+  font-family: var(--font-secondary);
+}
+
+.breadcrumbs .page-header p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.breadcrumbs nav {
+  padding: 20px 0;
+  position: relative;
+}
+
+.breadcrumbs nav ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ff5e14;
+}
+
+.breadcrumbs nav ol a {
+  color: var(--color-primary);
+  transition: 0.3s;
+}
+
+.breadcrumbs nav ol a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs nav ol li + li {
+  padding-left: 10px;
+}
+
+.breadcrumbs nav ol li + li::before {
+  display: inline-block;
+  padding-right: 10px;
+  color: var(--color-secondary);
+  content: "/";
 }
