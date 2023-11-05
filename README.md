@@ -14,7 +14,7 @@ Author: Stephen Murichu
 - [Usage](#usage)
 - [Customization](#customization)
 - [Screenshot](#screenshot)
-- [Author1](#auhor)
+- [Author](#auhor)
 
 ## Introduction
 
