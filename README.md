@@ -68,10 +68,6 @@ To customize this template:
 
 6. Deploy the customized website to your hosting server.
 
-## Contributing
-
-If you'd like to contribute to this template or report issues, please feel free to create a pull request or open an issue in the repository.
-
 ## Screenshot
 
 ![Website Screenshot](https://res.cloudinary.com/murste/image/upload/v1699180154/webtemplate_lxpavb.png)
