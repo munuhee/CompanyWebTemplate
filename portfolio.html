@@ -23,7 +23,7 @@
   </head>
 
   <body>
-    <!-- Header -->
+    <!-- ======= Header ======= -->
     <header id="header" class="header d-flex align-items-center">
       <div
         class="container-fluid container-xl d-flex align-items-center justify-content-between">
@@ -33,13 +33,34 @@
         <!-- .navbar -->
         <nav id="navbar" class="navbar">
           <ul>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html#hero">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li class="dropdown"><a href="#"><span>Drop Down</span> <i
+                  class="bi bi-chevron-down dropdown-indicator"></i></a>
+              <ul>
+                <li><a href="#">Drop Down 1</a></li>
+                <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i
+                      class="bi bi-chevron-down dropdown-indicator"></i></a>
+                  <ul>
+                    <li><a href="#">Deep Drop Down 1</a></li>
+                    <li><a href="#">Deep Drop Down 2</a></li>
+                    <li><a href="#">Deep Drop Down 3</a></li>
+                    <li><a href="#">Deep Drop Down 4</a></li>
+                    <li><a href="#">Deep Drop Down 5</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Drop Down 2</a></li>
+                <li><a href="#">Drop Down 3</a></li>
+                <li><a href="#">Drop Down 4</a></li>
+              </ul>
+            </li>
+            <li class="m-2"><button class="btn btn-dark" href="#contact">Talk to
+                Us</button></li>
           </ul>
         </nav><!-- .navbar -->
+
         <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
         <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
       </div>
@@ -92,7 +113,7 @@
                     src="assets/img/portfolio/item10.jpg" class="img-fluid" alt></a>
                 <div class="portfolio-info">
                   <h4>App
-                      1</h4>
+                    1</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                 </div>
               </div>
@@ -106,7 +127,7 @@
                     alt></a>
                 <div class="portfolio-info">
                   <h4>Product
-                      1</h4>
+                    1</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                 </div>
               </div>
@@ -120,7 +141,7 @@
                     alt></a>
                 <div class="portfolio-info">
                   <h4>Branding
-                      1</h4>
+                    1</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                 </div>
               </div>
@@ -133,7 +154,7 @@
                     src="assets/img/portfolio/item3.jpg" class="img-fluid" alt></a>
                 <div class="portfolio-info">
                   <h4>Books
-                      1</h4>
+                    1</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                 </div>
               </div>
@@ -146,7 +167,7 @@
                     src="assets/img/portfolio/item4.jpg" class="img-fluid" alt></a>
                 <div class="portfolio-info">
                   <h4>App
-                      2</h4>
+                    2</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                 </div>
               </div>
@@ -160,7 +181,7 @@
                     alt></a>
                 <div class="portfolio-info">
                   <h4>Product
-                      2</h4>
+                    2</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                 </div>
               </div>
@@ -174,7 +195,7 @@
                     alt></a>
                 <div class="portfolio-info">
                   <h4>Branding
-                      2</h4>
+                    2</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                 </div>
               </div>
@@ -187,7 +208,7 @@
                     src="assets/img/portfolio/item7.jpg" class="img-fluid" alt></a>
                 <div class="portfolio-info">
                   <h4>Books
-                      2</h4>
+                    2</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                 </div>
               </div>
@@ -200,7 +221,7 @@
                     src="assets/img/portfolio/item8.jpg" class="img-fluid" alt></a>
                 <div class="portfolio-info">
                   <h4>App
-                      3</h4>
+                    3</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                 </div>
               </div>
@@ -227,7 +248,7 @@
                     alt></a>
                 <div class="portfolio-info">
                   <h4>Branding
-                      3</h4>
+                    3</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                 </div>
               </div>
@@ -240,7 +261,7 @@
                     src="assets/img/portfolio/item11.jpg" class="img-fluid" alt></a>
                 <div class="portfolio-info">
                   <h4>Books
-                      3</h4>
+                    3</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                 </div>
               </div>
@@ -253,7 +274,7 @@
       </div>
     </section><!-- End Portfolio Section -->
 
-    <!-- Footer -->
+    <!-- ======= Footer ======= -->
     <footer class="footer-section">
       <div class="container">
         <div class="footer-content pt-5 pb-5">
@@ -331,13 +352,11 @@
     </footer>
     <!--End footer-->
 
-    <!--Whatsapp chat-->
+    <!-- ======= Whatsapp chat ======= -->
     <div id='whatsapp-chat' class='hide'>
       <div class='whatsapp-chat-header'>
         <div class='whatsapp-chat-avatar'>
-          <img
-            src='assets/img/chat-logo.png'
-            alt="StEvelove Logo" />
+          <img src='assets/img/chat-logo.png' alt="StEvelove Logo" />
         </div>
         <div class="whatsapp-chat-name"><span class="chat-name">
             StEvolve
@@ -362,47 +381,50 @@
             </div>
           </div>
           <div class="input-container">
-            <input type="text" class="message-input"
+            <input type="text" id="message" class="message-input"
               placeholder="Type a message...">
-            <button class="send-button">&#9658;</button>
+            <button id="send-button" class="send-button">&#9658;</button>
           </div>
         </div>
         <div id='get-number'></div>
         <a class='close-chat' href='javascript:void'>×</a>
       </div>
-      <a class='chat-toggler' href='javascript:void' title='Show Chat'><i
-          class="bi bi-chat-right-text"></i> Chat</a>
+      <a class='chat-toggler' href='javascript:void' title='Show Chat'>
+        <i class="bi bi-chat-right-text"></i> Chat</a>
       <!--End Whatsapp chat-->
 
       <!-- Cursor -->
       <div class='cursor' id="cursor"></div>
       <div class='cursor2' id="cursor2"></div>
       <div class='cursor3' id="cursor3"></div>
-      <!-- End Cursor -->
 
       <!--Preloader-->
       <div id="preloader"></div>
 
       <!--Back to top-->
-      <a href="#"
-        class="back-to-top d-flex align-items-center justify-content-center"><i
-          class="bi bi-arrow-up-short"></i></a>
+      <a href="#hero"
+        class="back-to-top d-flex align-items-center justify-content-center">
+        <i class="bi bi-arrow-up-short"></i>
+      </a>
 
-          <script
-            src='https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'></script>
-          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-          <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-          <script
-            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-          <script src="assets/vendor/aos/aos.js"></script>
-          <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-          <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-          <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-          <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-          <script src="assets/vendor/php-email-form/validate.js"></script>
+      <!-- External libraries and frameworks -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+      <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-          <script>
+      <!-- JavaScript plugins and components -->
+      <script src="assets/vendor/aos/aos.js"></script>
+      <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+      <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+      <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+      <script src="assets/vendor/php-email-form/validate.js"></script>
+
+      <!-- Google Translate API initialization and configuration -->
+      <script
+        src='https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'></script>
+      <script>
             function googleTranslateElementInit() {
               const translateConfig = {
                 pageLanguage: 'en',
@@ -415,6 +437,9 @@
             }
           </script>
 
-          <script src="assets/js/main.js"></script>
+      <!-- Custom JavaScript code for the website -->
+      <script src="assets/js/main.js"></script>
+
     </body>
+
   </html>
