@@ -13,7 +13,8 @@ Author: Stephen Murichu
 - [Getting Started](#getting-started)
 - [Usage](#usage)
 - [Customization](#customization)
-- [License](#license)
+- [Screenshot](#screenshot)
+- [Author1](#auhor)
 
 ## Introduction
 
@@ -79,4 +80,4 @@ If you'd like to contribute to this template or report issues, please feel free 
 
 - **Author Name:** Stephen Murichu
 
-I hope you find this template useful for your website project. If you have any questions or need further assistance, please don't hesitate to get in touch. Thank you for choosing StEvolve!
+I hope you find this template useful for your website project. If you have any questions or need further assistance, please don't hesitate to get in touch.
