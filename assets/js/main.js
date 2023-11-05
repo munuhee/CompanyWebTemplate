@@ -326,7 +326,7 @@ document.addEventListener("DOMContentLoaded", () => {
    * Initialize a Swiper carousel with coverflow effect,
    * keyboard navigation, loop, and responsive breakpoints.
    */
-  var swiper = new Swiper(".gallery-swiper", {
+  var swiper = new Swiper(".brand-elevation-swiper", {
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
