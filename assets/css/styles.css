@@ -645,6 +645,14 @@ section {
   line-height: 1;
 }
 
+@media screen and (max-width: 767px) {
+  .hero .btn-watch-video {
+    font-size: 14px;
+    margin: 10px 0;
+    padding: 8px 20px;
+  }
+}
+
 .hero .btn-watch-video i {
   line-height: 0;
   color: #fff;
