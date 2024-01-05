@@ -31,7 +31,6 @@ StEvolve is a modern and responsive website template designed to help businesses
 - Social media links
 - WhatsApp chat integration
 - Back to top button
-- Cursor effects for a unique user experience
 - Preloader for smooth page loading
 
 ## Getting Started
